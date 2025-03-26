@@ -7,8 +7,7 @@ let canvas;
 let noiseOffset = 1;
 
 function setup() {
-  canvas = createCanvas(700, 400); 
-  centerCanvas(); 
+  canvas = createCanvas(800, 400);
   createMetaballs(6);
 }
 
@@ -59,7 +58,7 @@ class Metaball {
   constructor(x, y, radius) {
     this.position = createVector(x, y);
     this.radius = radius;
-    this.velocity = p5.Vector.random2D().mult(2.25); //random movement and set speed
+    this.velocity = p5.Vector.random2D().mult(2.3); //random movement and set speed
   }
 
   move() { //move helper function (moves metaballs)
